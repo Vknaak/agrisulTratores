@@ -1,0 +1,38 @@
+<mat-toolbar class="div-logo">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <div class="link-principal">
+    <a routerLink="/home">PRINCIPAL</a>
+  </div>
+
+  <div  fxFlex fxLayout fxLayoutAlign="start" fxHide.xs>
+    <ul fxLayout fxLayoutGap="30px" class="navigation-items">
+      <li>
+        <a routerLink="#">EMPRESA</a>
+      </li>
+      <li>
+        <a routerLink="#">MÁQUINAS AGRICOLAS</a>
+      </li>
+      <li>
+        <a routerLink="#">QUERO COMPRAR</a>
+      </li>
+      <li>
+        <a routerLink="#">ANUNCIE</a>
+      </li>
+      <li>
+        <a routerLink="#">CONTATO</a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <img
+      class="logo"
+      src="../../../../assets/img/logoAgrisul.png"
+      alt="Logo Agrisul"
+    />
+  </div>
+</mat-toolbar>
